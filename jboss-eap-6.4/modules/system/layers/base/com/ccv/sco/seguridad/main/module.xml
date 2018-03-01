@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<module xmlns="urn:jboss:module:1.1" name="com.ccv.sco.seguridad">
+    <resources>
+        <resource-root path="seguridad-servicios-api-1.5.1-SNAPSHOT.jar"/>
+        <resource-root path="seguridad-ws-api-1.5.1-SNAPSHOT.jar"/>
+    </resources>
+    <dependencies>
+			
+        <module name="org.picketbox"/>
+	<module name="org.apache.commons.logging"/>
+	<module name="org.apache.commons.lang"/>
+   	<module name="javax.security.auth.message.api"/>
+        <module name="javax.security.jacc.api"/>
+	<module name="javax.resource.api"/>
+	<module name="javax.servlet.api"/>
+	<module name="javax.api"/>
+	<module name="javax.ws.rs.api"/> 
+        <module name="org.jboss.resteasy.resteasy-jaxrs"/>
+	<module name="org.jboss.resteasy.resteasy-jackson-provider"/>
+	
+    </dependencies>
+</module>
