@@ -406,8 +406,5 @@
     </socket-binding-group>
 
     <deployments>
-        <deployment name="jboss-as-helloworld.war" runtime-name="jboss-as-helloworld.war">
-            <content sha1="0838a8293c85177951a346326fb2367a0b856e10"/>
-        </deployment>
     </deployments>
 </server>
