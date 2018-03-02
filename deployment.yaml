@@ -1,0 +1,25 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: jboss-myapp
+  labels:
+    app: jboss-myapp
+spec:
+  template:
+    metadata:
+      labels:
+        app: jboss-myapp
+    spec:
+      containers:
+      - name: jboss-myapp
+        image: ritazh/jboss-myapp
+        imagePullPolicy: Always
+        ports:
+        - name: http
+          containerPort: 8080
+        - name: mgmt
+          containerPort: 9990
+        resources:
+          requests:
+            cpu: 300m
+            memory: 512Mi
