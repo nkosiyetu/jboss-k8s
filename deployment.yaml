@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: jboss-myapp
-        image: ritazh/jboss-myapp
+        image: ritaacr.azurecr.io/jboss-myapp
         imagePullPolicy: Always
         ports:
         - name: http
@@ -23,3 +23,5 @@ spec:
           requests:
             cpu: 300m
             memory: 512Mi
+      imagePullSecrets:
+      - name: registrykey
